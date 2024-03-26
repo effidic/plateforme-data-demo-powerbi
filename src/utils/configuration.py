@@ -17,10 +17,9 @@ class Configuration:
 
     LOG_FORMAT = os.environ.get("LOG_FORMAT")
     LOG_LEVEL = os.environ.get("LOG_LEVEL")
-    KEYFILE_CLIENT_EMAIL = os.environ.get("KEYFILE_CLIENT_EMAIL")
-    KEYFILE_CLIENT_ID = os.environ.get("KEYFILE_CLIENT_ID")
-    KEYFILE_PROJECT_ID = os.environ.get("KEYFILE_PROJECT_ID")
-    KEYFILE_CLIENT_X509_CERT_URL = os.environ.get("KEYFILE_CLIENT_X509_CERT_URL")
-    KEYFILE_PRIVATE_KEY = os.environ.get("KEYFILE_PRIVATE_KEY")
-    KEYFILE_PRIVATE_KEY_ID = os.environ.get("KEYFILE_PRIVATE_KEY_ID")
-    GCP_BUCKET_NAME = os.environ.get("GCP_BUCKET_NAME")
+    POWERBI_CLIENT_ID = os.environ.get("POWERBI_CLIENT_ID")
+    POWERBI_CLIENT_SECRET = os.environ.get("POWERBI_CLIENT_SECRET")
+    POWERBI_TENANT_ID = os.environ.get("POWERBI_TENANT_ID")
+    POWERBI_GROUP_ID = os.environ.get("POWERBI_GROUP_ID")
+    POWERBI_DATASET_ID = os.environ.get("POWERBI_DATASET_ID")
+    

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "plateforme-data-demo-python"
+name = "plateforme-data-demo-powerbi"
 version = "0.1.0"
 description = ""
 authors = ["sylvain tacquet <sylvain.tacquet@effidic.fr>"]
