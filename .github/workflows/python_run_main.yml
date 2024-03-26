@@ -20,12 +20,11 @@ jobs:
   
       - name: Run Docker Image
         env:
-          KEYFILE_PRIVATE_KEY: ${{ secrets.KEYFILE_PRIVATE_KEY }}
+          POWERBI_CLIENT_SECRET: ${{ secrets.POWERBI_CLIENT_SECRET }}
         run: docker run --name testproject 
-          -e "KEYFILE_PROJECT_ID=${{ vars.KEYFILE_PROJECT_ID }}" 
-          -e "KEYFILE_CLIENT_EMAIL=${{ vars.KEYFILE_CLIENT_EMAIL }}" 
-          -e "KEYFILE_CLIENT_ID=${{ vars.KEYFILE_CLIENT_ID }}" 
-          -e "KEYFILE_CLIENT_X509_CERT_URL=${{ vars.KEYFILE_CLIENT_X509_CERT_URL }}" 
-          -e "KEYFILE_PRIVATE_KEY_ID=${{ vars.KEYFILE_PRIVATE_KEY_ID }}" 
-          -e "KEYFILE_PRIVATE_KEY=$KEYFILE_PRIVATE_KEY" 
+          -e "POWERBI_CLIENT_ID=${{ vars.POWERBI_CLIENT_ID }}" 
+          -e "POWERBI_DATASET_ID=${{ vars.POWERBI_DATASET_ID }}" 
+          -e "POWERBI_GROUP_ID=${{ vars.POWERBI_GROUP_ID }}" 
+          -e "POWERBI_TENANT_ID=${{ vars.POWERBI_TENANT_ID }}" 
+          -e "POWERBI_CLIENT_SECRET=$POWERBI_CLIENT_SECRET" 
           europe-west1-docker.pkg.dev/plateforme-data-demo/effidic-registry/plateforme-data-demo-powerbi:main
