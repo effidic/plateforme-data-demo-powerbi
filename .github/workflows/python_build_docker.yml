@@ -3,9 +3,7 @@ name: Build and Push Docker image
 on:
   push:
     branches:
-      - main 
-    paths:
-      - 'src/**'
+      - main
 
 jobs:
   python_build_docker:
