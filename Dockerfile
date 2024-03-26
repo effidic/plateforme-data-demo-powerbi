@@ -17,9 +17,7 @@ ENV PYTHONPATH $PYTHONPATH:/app
 
 COPY . /app
 
-RUN pip install poetry
-RUN poetry install
-
+RUN pip install --upgrade pip --user && pip install --user -r requirements.txt
 
 ENTRYPOINT ["python3"]
 
