@@ -5,6 +5,7 @@ on:
 
 jobs:
   deploy:
+    name: Power BI Refresh
     runs-on: ubuntu-latest
     steps:
       - name: Log in to Google Artifact Registry
