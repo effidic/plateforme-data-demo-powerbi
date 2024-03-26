@@ -1,4 +1,4 @@
-# plateforme-data-demo-python
+# plateforme-data-demo-powerbi
 
 
 ## Liste des sources
